@@ -1,0 +1,29 @@
+@mixin decor {
+    color: $white;
+    text-decoration: none;
+}
+
+@mixin status-link ($color) {
+    padding: 5px 5px 8px 6px;
+    background-color: $color;
+    border-radius: 8px;
+}
+
+@mixin dot ($left: null, $bottom: null, $top: null, $right: null) {
+    content: '';
+    position: absolute;
+    left: $left;
+    bottom: $bottom;
+    top: $top;
+    right: $right;
+    background-color: $grey-separator;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+}
+
+@mixin font ($font-size , $line-height , $font-weight: null) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
