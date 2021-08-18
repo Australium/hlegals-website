@@ -15,6 +15,11 @@
     &__logo {
         margin: 0 auto 2px 0;
     }
+    &__nav-bar-inside-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
     &__language-list {
         display: flex;
         padding: 0 0 1px 0;
@@ -27,7 +32,8 @@
         letter-spacing: 1px;
         margin: 0 12px 0 0;
     }
-    &__language-links_active:target{
+    // Here is a premade class for JS manipulation on language links
+    &__language-links_active {
         @include status-link ($accent);
         outline: none;
     }
@@ -40,7 +46,6 @@
     &__contact-list {
         display: flex;
         justify-content: flex-end;
-        width: 100%;
     }
     &__contact-links {
         @include decor;
@@ -48,7 +53,8 @@
     &__contact-links_hover:hover {
         color: $accent;
     }
-    &__contact-links_target:target {
+    // Here is a premade class for JS manupulation on contact links
+    &__contact-links_active {
         color: $accent;
         text-decoration: underline;
         text-decoration-color: $accent; 
@@ -114,7 +120,7 @@
 }
 
 .dot:before {
-    @include dot (-10px, 4px)
+    @include dot (-14px, 4px)
 }
 
 .container {
@@ -124,9 +130,7 @@
 
 .nav-bar {
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 3px 0 0 0;
-    align-content: space-between;
 }

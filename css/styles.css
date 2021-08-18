@@ -95,6 +95,11 @@ body {
 .header__logo {
   margin: 0 auto 2px 0;
 }
+.header__nav-bar-inside-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .header__language-list {
   display: flex;
   padding: 0 0 1px 0;
@@ -108,7 +113,7 @@ body {
   letter-spacing: 1px;
   margin: 0 12px 0 0;
 }
-.header__language-links_active:target {
+.header__language-links_active {
   padding: 5px 5px 8px 6px;
   background-color: #f0145a;
   border-radius: 8px;
@@ -125,7 +130,6 @@ body {
 .header__contact-list {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
 }
 .header__contact-links {
   color: white;
@@ -134,7 +138,7 @@ body {
 .header__contact-links_hover:hover {
   color: #f0145a;
 }
-.header__contact-links_target:target {
+.header__contact-links_active {
   color: #f0145a;
   text-decoration: underline;
   text-decoration-color: #f0145a;
@@ -215,7 +219,7 @@ body {
 .dot:before {
   content: "";
   position: absolute;
-  left: -10px;
+  left: -14px;
   bottom: 4px;
   background-color: #e6e6f0;
   height: 6px;
@@ -230,11 +234,9 @@ body {
 
 .nav-bar {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 3px 0 0 0;
-  align-content: space-between;
 }
 
 /*# sourceMappingURL=styles.css.map */
