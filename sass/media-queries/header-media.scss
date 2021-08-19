@@ -3,10 +3,20 @@
         width: 100%;
         padding: 0 20px;
     }
+    .header {
+        &__section-bottom-flex {
+            padding: 242px 20px 0;
+        }
+    }
 }
 
 @include mq-phone {
     .header {
+        background-image: $gradient-opacity,
+        url('../images/svg/symbol-p.svg'),
+        $gradient-soft;
+        background-position: center bottom, center 204px, center;
+        background-size: auto calc(100vh - 440px), auto, auto;
         &__contact-list {
             display: none;
         }
@@ -66,9 +76,20 @@
         &__hamburger-item:last-child {
             margin: 0;
         }
+        &__heading-one {
+            width: 334px;
+        }
+        &__section-bottom-flex {
+            padding: 147px 20px 0;
+            min-height: calc(100vh - 95px);
+        }
     }
+}
 
-    // .dot {
-    //     display: none;
-    // }
+@media (max-width: 374px) {
+    .header {
+        &__hamburger-list {
+            width: calc(100vw + (375px - 100vw));
+        }
+    }
 }

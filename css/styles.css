@@ -265,7 +265,7 @@ body {
   display: none;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh + 10px);
   background: white;
   top: -83px;
   right: -20px;
@@ -379,8 +379,17 @@ body {
     width: 100%;
     padding: 0 20px;
   }
+
+  .header__section-bottom-flex {
+    padding: 242px 20px 0;
+  }
 }
 @media (max-width: 767px) {
+  .header {
+    background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%), url("../images/svg/symbol-p.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    background-position: center bottom, center 204px, center;
+    background-size: auto calc(100vh - 440px), auto, auto;
+  }
   .header__contact-list {
     display: none;
   }
@@ -440,6 +449,18 @@ body {
   }
   .header__hamburger-item:last-child {
     margin: 0;
+  }
+  .header__heading-one {
+    width: 334px;
+  }
+  .header__section-bottom-flex {
+    padding: 147px 20px 0;
+    min-height: calc(100vh - 95px);
+  }
+}
+@media (max-width: 374px) {
+  .header__hamburger-list {
+    width: calc(100vw + (375px - 100vw));
   }
 }
 

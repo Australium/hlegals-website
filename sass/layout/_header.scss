@@ -171,16 +171,12 @@
         display: none;
         position: absolute;
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh + 10px);
         background: $white;
         top: -83px;
         right: -20px;
         padding: 74px 20px 0;
         border-radius: 12px 12px 0 0;
-        // -webkit-font-smoothing: antialiased;
-        // transform-origin: 0% 0%;
-        // transform: translate(0, 0);
-        // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     &__checkbox:checked ~ .header__hamburger-list {
         display: flex;
@@ -188,7 +184,6 @@
         justify-content: flex-start;
         text-align: center;
         animation: moving 1.3s;
-        // transform: none;
     }
     &__checkbox:not(:checked) ~ .header__hamburger-list {
         animation: collapsing 1s; 
