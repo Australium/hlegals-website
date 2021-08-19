@@ -138,8 +138,8 @@
         background: $white;
         z-index: 1;
         transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 1s cubic-bezier(0.77,0.2,0.05,1.0),
                     opacity 0.55s ease;
     }
     &__hamburger-cross:first-child {
@@ -176,7 +176,6 @@
         top: -83px;
         right: -20px;
         padding: 74px 20px 0;
-        animation: moving 1.3s;
         border-radius: 12px 12px 0 0;
         // -webkit-font-smoothing: antialiased;
         // transform-origin: 0% 0%;
@@ -188,7 +187,23 @@
         flex-direction: column;
         justify-content: flex-start;
         text-align: center;
+        animation: moving 1.3s;
         // transform: none;
+    }
+    &__checkbox:not(:checked) ~ .header__hamburger-list {
+        animation: collapsing 1s; 
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        transition-delay: 1s;
+        transition-property: opacity, height, width, top, right, visibility;
+        opacity: 1;
+        width: 0;
+        height: 0;
+        top: -1000px;
+        right: 343px;
+        visibility: hidden;
     }
     &__hamburger-item {
         margin: 0 0 11px
@@ -249,4 +264,9 @@
 @keyframes moving {
     from {transform: translateY(100%);}
     to {transform: translateY(0);}
+}
+
+@keyframes collapsing {
+    from {transform: translateY(0);}
+    to {transform: translateY(100%);}
 }

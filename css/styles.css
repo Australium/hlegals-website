@@ -235,7 +235,7 @@ body {
   background: white;
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1), background 1s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 .header__hamburger-cross:first-child {
   transform-origin: 0% 0%;
@@ -270,7 +270,6 @@ body {
   top: -83px;
   right: -20px;
   padding: 74px 20px 0;
-  animation: moving 1.3s;
   border-radius: 12px 12px 0 0;
 }
 .header__checkbox:checked ~ .header__hamburger-list {
@@ -278,6 +277,22 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  animation: moving 1.3s;
+}
+.header__checkbox:not(:checked) ~ .header__hamburger-list {
+  animation: collapsing 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  transition-delay: 1s;
+  transition-property: opacity, height, width, top, right, visibility;
+  opacity: 1;
+  width: 0;
+  height: 0;
+  top: -1000px;
+  right: 343px;
+  visibility: hidden;
 }
 .header__hamburger-item {
   margin: 0 0 11px;
@@ -349,6 +364,14 @@ body {
   }
   to {
     transform: translateY(0);
+  }
+}
+@keyframes collapsing {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
   }
 }
 @media (max-width: 1439px) {
