@@ -1,0 +1,74 @@
+@include mq-tablet {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@include mq-phone {
+    .header {
+        &__contact-list {
+            display: none;
+        }
+        &__address {
+            display: none;
+        }
+        &__facebook-wrap {
+            display: none;
+        }
+        &__hamburger-menu {
+            display: block;
+        }
+        &__nav-bar .dot:before {
+            display: none;
+        }
+        &__nav-bar {
+            order: -1;
+            width: 100%;
+            flex-direction: row;
+            padding: 0;
+            align-items: center;
+            margin: 0 0 23px;
+        }
+        &__nav-bar-inside-wrap {
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__section-top {
+            padding: 22px 0 0;
+        }
+        &__wrap {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        &__number {
+            color: $grey-text;
+            margin: 0;
+        }
+        &__language-links {
+            color: $grey-text;
+        }
+        &__language-links_active {
+            color: $white;
+        }
+        &__logo {
+            margin: 0 auto 0 0;
+        }
+        &__language-list {
+            padding: 0;
+        }
+        &__language-links_margin {
+            margin: 0;
+        }
+        &__language-items {
+            @include font (12px, 14px);
+        }
+        &__hamburger-item:last-child {
+            margin: 0;
+        }
+    }
+
+    // .dot {
+    //     display: none;
+    // }
+}

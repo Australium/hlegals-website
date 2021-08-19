@@ -27,3 +27,15 @@
     line-height: $line-height;
     font-weight: $font-weight;
 }
+
+@mixin mq-tablet {
+    @media (max-width: $screen-tablet) {
+        @content;
+    }
+}
+
+@mixin mq-phone {
+    @media (max-width: $screen-phone) {
+        @content;
+    }
+}

@@ -10,10 +10,13 @@
     <header class="header">
         <section class="header__section-top">
             <div class="container header__wrap">
-                <a href="index.html#ua" class="header__logo">
-                    <img src="images/svg/logo.svg" alt="hlegals logo" class="header__logo-image">
+                <a href="#" class="header__logo">
+                    <picture class="header__logo-picture">
+                        <source media="(max-width: 767px)" srcset="images/svg/logo-mini.svg">
+                        <img src="images/svg/logo.svg" alt="hlegals logo" class="header__logo-image">
+                    </picture>
                 </a>
-                <nav class="header__nav-bar nav-bar">
+                <nav role="navigation" class="header__nav-bar nav-bar">
                     <div class="header__nav-bar-inside-wrap">
                         <ul class="header__language-list">
                             <li class="header__language-items">
@@ -52,18 +55,41 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header__hamburger-menu">
+                    <input type="checkbox" class="header__checkbox">
+                    <span class="header__hamburger-cross"></span>
+                    <span class="header__hamburger-cross"></span>
+                    <span class="header__hamburger-cross"></span>
+                    <ul class="header__hamburger-list">
+                        <li href="#" class="header__hamburger-item header__hamburger-item_logo_before">
+                            <a class="header__hamburger-link header__hamberger-link_active">про нас</a>
+                        </li>
+                        <li href="#" class="header__hamburger-item">
+                            <a class="header__hamburger-link header__hamberger-link_active">послуги</a>
+                        </li>
+                        <li href="#" class="header__hamburger-item">
+                            <a class="header__hamburger-link header__hamberger-link_active">команда</a>
+                        </li>
+                        <li href="#" class="header__hamburger-item">
+                            <a class="header__hamburger-link header__hamberger-link_active">публікації</a>
+                        </li>
+                        <li href="#" class="header__hamburger-item">
+                            <a class="header__hamburger-link header__hamberger-link_active">контакти</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section class="header__section-bottom">
+        <!-- <section class="header__section-bottom">
             <div class="container header__section-bottom-flex">
                 <h1 class="header__heading-one">системний адміністратор правових рішень</h1>
-                <button type="button" class="header__button">
+                <button type="button" class="header__button header__button_active">
                     <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="header__button-icon" d="M1 1L10 10L19 1" stroke="white" stroke-width="2"/>
                     </svg>
                 </button>
             </div>
-        </section>
+        </section> -->
     </header>
 </body>
 </html>
