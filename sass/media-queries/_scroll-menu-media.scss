@@ -1,0 +1,31 @@
+@include mq-tablet {
+    .scroll-menu {
+        &__slide-wrap {
+            width: auto;
+            justify-content: center;
+        }
+        &__jump-link-wrap {
+            justify-content: space-between;
+            width: 452px;
+        }
+        &__jump-link {
+            @include font (35px, 45px);
+        }
+        &__slider {
+            width: 630px;
+        }
+        &__slider-slide {
+            width: auto;
+            padding: 35px 0 35px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        &__heading {
+            @include font (22px, 26px);
+        }
+        &__text {
+            @include font (20px, 22px);
+        }
+    }
+}

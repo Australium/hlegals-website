@@ -555,4 +555,37 @@ body {
   height: 50px;
 }
 
+@media (max-width: 1439px) {
+  .scroll-menu__slide-wrap {
+    width: auto;
+    justify-content: center;
+  }
+  .scroll-menu__jump-link-wrap {
+    justify-content: space-between;
+    width: 452px;
+  }
+  .scroll-menu__jump-link {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .scroll-menu__slider {
+    width: 630px;
+  }
+  .scroll-menu__slider-slide {
+    width: auto;
+    padding: 35px 0 35px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .scroll-menu__heading {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .scroll-menu__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
