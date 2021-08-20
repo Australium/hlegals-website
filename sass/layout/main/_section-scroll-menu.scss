@@ -1,0 +1,87 @@
+.scroll-menu {
+    background-image: $gradient-super-soft;
+    padding: 80px 0;
+    &__slide-wrap {
+        display: flex;
+        width: 1207px;
+    }
+    &__slider {
+        width: auto;
+        height: 312px;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        direction: rtl;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+    &__slider-slide {
+        width: 626px;
+        flex-shrink: 0;
+        height: 100%;
+        padding: 51px 0 45px 40px;
+        direction: ltr;
+        scroll-snap-align: start;
+    }
+    &__jump-link-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        direction: rtl;
+        width: 527px;
+    }
+    &__jump-link {
+        @include font (42px , 50px, 700);
+        text-decoration: none;
+        color: $grey-text;
+    }
+    &__jump-link_hover:hover {
+        background-color: $accent;
+        background-image: $gradient-red-text-reversed;
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+    // This is a jump-link in it's active state for JS manipulation
+    &__jump-link_active {
+        background-color: $accent;
+        background-image: $gradient-red-text-reversed;
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+    &__jump-item {
+        margin: 0 0 21px;
+    }
+    &__jump-item:first-child {
+        margin: 0 0 20px;
+    }
+    &__jump-item:last-child {
+        margin: 0;
+    }
+    &__heading {
+        @include font (32px, 38px, 500);
+        color: $white;
+        margin: 0 0 21px;
+    }
+    &__text {
+        @include font (21px, 30px);
+        color: $white;
+    }
+    &__slider::-webkit-scrollbar {
+        width: 4px;
+        background-color: $grey-separator;
+    }
+    &__slider::-webkit-scrollbar-thumb {
+        background: $accent;
+        height: 50px;
+    }
+}
