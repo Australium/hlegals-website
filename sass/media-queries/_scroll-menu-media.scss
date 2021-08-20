@@ -29,3 +29,18 @@
         }
     }
 }
+
+@include mq-phone {
+    .scroll-menu {
+        display: none;
+    }
+
+    .services {
+        padding: 40px 0 45px;
+    }
+
+    .slider-menu {
+        display:flex;
+    }
+
+}

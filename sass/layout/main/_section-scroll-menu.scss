@@ -1,6 +1,10 @@
-.scroll-menu {
+.services {
     background-image: $gradient-super-soft;
+}
+
+.scroll-menu {
     padding: 80px 0;
+    display: block;
     &__slide-wrap {
         display: flex;
         width: 1207px;
@@ -43,6 +47,7 @@
         background-size: 100%;
         background-repeat: repeat;
         -webkit-background-clip: text;
+                background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
@@ -54,6 +59,7 @@
         background-size: 100%;
         background-repeat: repeat;
         -webkit-background-clip: text;
+                background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
@@ -76,12 +82,96 @@
         @include font (21px, 30px);
         color: $white;
     }
-    &__slider::-webkit-scrollbar {
+    &__slider_scrollbar::-webkit-scrollbar {
         width: 4px;
         background-color: $grey-separator;
     }
-    &__slider::-webkit-scrollbar-thumb {
+    &__slider_scrollbar-thumb::-webkit-scrollbar-thumb {
         background: $accent;
         height: 50px;
+    }
+}
+
+.slider-menu {
+    display: none;
+    height: 312px;
+    position: relative;
+    overflow: hidden;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    &__button {
+        width: 16px;
+        height: 16px;
+        margin: 0 14px 0 0;
+        border-radius: 50%;
+        z-index: 10;
+        cursor: pointer;
+        background-color: $active-regular;
+        opacity: 0.2;
+        appearance: none;
+        outline: none;
+    }
+    &__button_checked:checked {
+        opacity: 1;
+    }
+    &__button_hover:hover {
+        opacity: 0.6;
+    }
+    &__button_checked:checked:nth-of-type(1) ~ .slider-menu__inner {
+        left: 0%;
+    }
+    &__button_checked:checked:nth-of-type(2) ~ .slider-menu__inner {
+        left: -100%;
+    }
+    &__button_checked:checked:nth-of-type(3) ~ .slider-menu__inner {
+        left: -200%;
+    }
+    &__button_checked:checked:nth-of-type(4) ~ .slider-menu__inner {
+        left: -300%;
+    }
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400%;
+        height: 100%;
+        -webkit-transition: left 0.4s;
+        transition: left 0.4s;
+        display: flex;
+    }
+    &__contents {
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1;
+        flex-direction: column;
+    }
+    &__desc {
+        @include font (14px, 17px, 700);
+        margin: 0 0 10px;
+        background-color: $accent;
+        background-image: $gradient-red-text-reversed;
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        width: 335px;
+    }
+    &__heading {
+        @include font (22px, 26px, 500);
+        color: $white;
+        margin: 0 0 15px;
+        width: 335px;
+    }
+    &__text {
+        color: $white;
+        margin: 0 0 20px;
+        width: 335px;
     }
 }
