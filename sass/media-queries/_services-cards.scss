@@ -1,0 +1,54 @@
+@include mq-tablet {
+    .service-cards {
+        &__list {
+            justify-content: space-between;
+        }
+        &__list-item {
+            margin: 0 0 58px;
+            width: 45%;
+        }
+        &__list-item:nth-last-child(-n+2) {
+            margin: 0;
+        }
+        &__list-item:nth-last-child(3) {
+            margin: 0 0 58px;
+        }
+    }
+}
+
+@include mq-phone {
+    .service-cards {
+        padding: 45px 0 20px;
+        &__h-2 {
+            @include font (32px, 38px);
+            margin: 3px 0 20px;
+        }
+        &__list {
+            flex-direction: column;
+        }
+        &__list-item {
+            width: 100%;
+            flex-flow: row wrap;
+            margin: 0 0 40px;
+        }
+        &__list-item:nth-last-child(n+2) {
+            margin: 0 0 40px;
+        }
+        &__icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            margin: 0 10px 0 0;
+        }
+        &__h-3 {
+            @include font (18px, 21px);
+            margin: 0;
+            align-self: center;
+            width: 260px;
+        }
+        &__text {
+            @include font (16px, 22px);
+            margin: 10px 0 0 0;
+        }
+    }
+}

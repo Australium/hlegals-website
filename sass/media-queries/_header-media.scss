@@ -90,6 +90,7 @@
     .header {
         &__hamburger-list {
             width: calc(100vw + (375px - 100vw));
+            height: 100%;
         }
     }
 }

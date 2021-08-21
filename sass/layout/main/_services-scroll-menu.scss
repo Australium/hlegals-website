@@ -1,5 +1,30 @@
 .services {
     background-image: $gradient-super-soft;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    // box-shadow: 0px 20px 0px -10px $shadow-grey;
+}
+
+.services_before:before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 10px;
+    border-radius: 0 0 12px 12px;
+    background-color: $shadow-grey;
+    right: 20px;
+    bottom: -10px;
+}
+
+.services_after:after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 10px;
+    border-radius: 0 0 12px 12px;
+    background-color: $shadow-grey-light;
+    right: 40px;
+    bottom: -20px;
 }
 
 .scroll-menu {
@@ -100,12 +125,12 @@
     flex-flow: row nowrap;
     align-items: flex-end;
     justify-content: center;
+    margin: 16px 0 0;
     &__button {
         width: 16px;
         height: 16px;
         margin: 0 14px 0 0;
         border-radius: 50%;
-        z-index: 10;
         cursor: pointer;
         background-color: $active-regular;
         opacity: 0.2;
@@ -132,7 +157,7 @@
     }
     &__inner {
         position: absolute;
-        top: 0;
+        top: -16px;
         left: 0;
         width: 400%;
         height: 100%;
@@ -151,7 +176,7 @@
     }
     &__desc {
         @include font (14px, 17px, 700);
-        margin: 0 0 10px;
+        margin: 16px 0 10px;
         background-color: $accent;
         background-image: $gradient-red-text-reversed;
         background-size: 100%;
