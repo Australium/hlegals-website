@@ -1,0 +1,67 @@
+@include mq-tablet {
+    @media (max-width: $screen-tablet) {
+        .slider-menu__team-menu {
+            height: 288px;
+        }
+
+        .team-slider-card {
+            &__slider-menu {
+                height: 266px;
+            }
+            &__wrap {
+                width: auto;
+                padding: 7px 25px 0 25px;
+            }
+            &__quote {
+                width: auto;
+            }
+            &__heading {
+                @include font (30px, 30px)
+            }
+        }
+    }
+}
+
+@include mq-phone {
+    @media (max-width: $screen-phone) {
+        .slider-menu__team-menu {
+            height: 466px;
+        }
+        .team-slider-card {
+            &__slider-menu {
+                height: 450px;
+            }
+            &__icon {
+                display: none;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            &__heading {
+                @include font (32px, 38px);
+                margin: 5px 0 10px;
+            }
+            &__wrap {
+                padding: 20px 0 20px 21px;
+                border-radius: 12px;
+            }
+        }
+        .quote-footer {
+            display: flex;
+            align-items: center;
+            &__icon {
+                display: block;
+                margin: 0 10px 0 0;
+            }
+        }
+        .quote-cite {
+            display: none;
+            &_small-screen {
+                display: block;
+            }
+        }
+        .team-slider-card {
+            padding: 40px 0 30px;
+        }
+    }
+}
