@@ -1,3 +1,66 @@
+@import '../../components/jump-link';
+
+.jump-link_team {
+    color: $active-regular;
+}
+
+.jump-link_team-after:after {
+    content: url('../images/svg/greater-than-symbol-active-regular.svg');
+}
+
 .team-slider-card {
-    margin: 500px 0;
+    background-color: $white;
+    padding: 60px 0 41px;
+}
+
+.slider-menu_visible {
+    display: flex;
+}
+
+.slider-menu__team-menu {
+    height: 537px;
+    margin: 0;
+}
+
+.team-slider-card {
+    &__menu-contents {
+        align-items: flex-start;
+        flex-direction: row;
+        padding: 0;
+        margin: 16px 0 0;
+    }
+    &__heading {
+        @include font (42px, 50px, 700);
+        @include text-gradient ($accent, $gradient-red-text);
+        margin: 3px 0 20px;
+    }
+    &__icon-image {
+        display: block
+    }
+    &__slider-menu {
+        height: 516px;
+        width: 300%;
+    }
+    &__wrap {
+        width: 907px;
+        padding: 40px 40px 0;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 16px);
+        background-color: $grey-bg;
+        border-radius: 0 12px 12px 0;
+    }
+    &__quote {
+        width: 839px;
+    }
+}
+
+.quote-cite {
+    @include font (16px, 22px);
+    color: $grey-text;
+    display: block;
+}
+.quote-cite_first-line::first-line {
+    @include font (18px, 26px);
+    margin: 0 0 50px;
 }

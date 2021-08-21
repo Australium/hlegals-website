@@ -176,16 +176,8 @@
     }
     &__desc {
         @include font (14px, 17px, 700);
+        @include text-gradient ($accent, $gradient-red-text-reversed);
         margin: 16px 0 10px;
-        background-color: $accent;
-        background-image: $gradient-red-text-reversed;
-        background-size: 100%;
-        background-repeat: repeat;
-        -webkit-background-clip: text;
-                background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
         width: 335px;
     }
     &__heading {

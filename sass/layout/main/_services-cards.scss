@@ -1,32 +1,15 @@
+@import '../../components/jump-link';
+
+.jump-link_color {
+    color: $grey-text;
+}
+
 .service-cards {
     padding: 0 0 80px;
-    &__jump-link {
-        color: $grey-text;
-        @include font (14px, 17px, 700);
-        letter-spacing: 1px;
-        position: relative;
-        text-decoration: none;
-    }
-    &__jump-link_after:after {
-        content: url('../images/svg/greater-than-symbol.svg');
-        width: 5px;
-        height: 9px;
-        position: absolute;
-        top: 3px;
-        left: 65px;
-    }
     &__h-2 {
         @include font (42px, 50px, 700);
-        background-color: $accent;
-        background-image: $gradient-red-text-reversed;
-        background-size: 100%;
-        background-repeat: repeat;
-        -webkit-background-clip: text;
-                background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-        margin: 3px 0 68px;
+        @include text-gradient ($accent, $gradient-red-text);
+        margin: 0 0 68px;
     }
     &__icon {
         background-color: $white;
