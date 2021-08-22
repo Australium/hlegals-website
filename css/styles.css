@@ -1118,4 +1118,13 @@ body {
   padding: 0 20px;
 }
 
+@media (max-width: 1439px) and (max-width: 1439px) {
+  .cases__item:nth-child(n) {
+    width: 50%;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    justify-content: flex-end;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

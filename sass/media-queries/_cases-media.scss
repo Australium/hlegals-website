@@ -1,0 +1,10 @@
+@include mq-tablet {
+    @media (max-width: $screen-tablet) {
+        .cases__item:nth-child(n) {
+            width: 50%;
+            border-bottom: 1px solid $white;
+            border-right: 1px solid $white;
+            justify-content: flex-end;
+        }
+    }
+}
