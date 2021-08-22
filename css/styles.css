@@ -1126,5 +1126,20 @@ body {
     justify-content: flex-end;
   }
 }
+@media (max-width: 767px) and (max-width: 767px) {
+  .cases__item:nth-child(n) {
+    width: 100%;
+    border-right: none;
+  }
+
+  .cases__text {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .cases__heading + .cases__text {
+    margin: 20px 0 10px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,3 +8,21 @@
         }
     }
 }
+
+@include mq-phone {
+    @media (max-width: $screen-phone) {
+        .cases__item:nth-child(n) {
+            width: 100%;
+            border-right: none;
+        }
+        .cases {
+            &__text {
+                margin: 0 0 10px;
+                @include font (18px, 21px)
+            }
+            &__heading + .cases__text {
+                margin: 20px 0 10px;
+            }
+        }
+    }
+}
