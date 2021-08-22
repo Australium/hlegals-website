@@ -1,0 +1,96 @@
+.cases {
+    padding: 0 0 30px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 12px;
+        background-color: $grey-bg;
+    }
+    &__heading {
+        @include font (14px, 17px, 700);
+        color: $accent;
+        border-bottom: 1px solid $white;
+        padding: 0 20px 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &__text {
+        @include font (24px, 28px, 500);
+        color: $main-soft;
+        margin: 48px 0 20px;
+    }
+    &__link {
+        color: $grey-text;
+        text-decoration: none;
+    }
+    &__item_hidden {
+        display: none;
+    }
+    &__item_hidden_last {
+        display: none;
+    }
+    &__text_hidden {
+        color: $black;
+    }
+    &__item {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
+    }
+    &__item_first-child:first-child {
+        padding: 20px 0 20px;
+    }
+    &__item:nth-child(3) {
+        border-right: none;
+    }
+    &__item:nth-child(9) {
+        border-right: none;
+        border-bottom: none;
+    }
+    &__item:nth-child(7) {
+        border-bottom: none;
+    }
+    &__item:nth-child(8) {
+        border-bottom: none;
+    }
+    &__item_width-one {
+        width: 433px;
+    }
+    &__item_width-two {
+        width: 454px;
+    }
+    &__item_width-three {
+        width: 433px;
+    }
+    &__item_width-four {
+        width: 320px;
+    }
+    &__item_width-five {
+        width: 453px;
+    }
+    &__item_width-six {
+        width: 547px;
+    }
+    &__text_margin-big {
+        margin: 85px 0 20px;
+    }
+    &__text_margin-medium {
+        margin: 56px 0 20px;
+    }
+    &__text_margin-none {
+        margin: 0 0 20px;
+    }
+    &__item_hover:hover {
+        background-color: $grey-alt;
+    }
+    &__item_hidden {
+        padding: 40px 227px;
+        background-color: $grey-alt;
+    }
+}
+
+.first-type:first-of-type {
+    padding: 0 20px;
+}

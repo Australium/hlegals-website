@@ -726,6 +726,7 @@ body {
   letter-spacing: 1px;
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .jump-link_after:after {
@@ -733,8 +734,8 @@ body {
   width: 5px;
   height: 9px;
   position: absolute;
-  top: 3px;
-  left: 65px;
+  top: 1px;
+  left: 83px;
 }
 
 .jump-link_color {
@@ -857,6 +858,7 @@ body {
   letter-spacing: 1px;
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .jump-link_after:after {
@@ -864,8 +866,8 @@ body {
   width: 5px;
   height: 9px;
   position: absolute;
-  top: 3px;
-  left: 65px;
+  top: 1px;
+  left: 83px;
 }
 
 .jump-link_team {
@@ -1014,6 +1016,106 @@ body {
   .team-slider-card {
     padding: 40px 0 30px;
   }
+}
+.cases {
+  padding: 0 0 30px;
+}
+.cases__list {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  background-color: #f5f5fa;
+}
+.cases__heading {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #f0145a;
+  border-bottom: 1px solid white;
+  padding: 0 20px 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.cases__text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #686887;
+  margin: 48px 0 20px;
+}
+.cases__link {
+  color: #b3b3ba;
+  text-decoration: none;
+}
+.cases__item_hidden {
+  display: none;
+}
+.cases__item_hidden_last {
+  display: none;
+}
+.cases__text_hidden {
+  color: black;
+}
+.cases__item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.cases__item_first-child:first-child {
+  padding: 20px 0 20px;
+}
+.cases__item:nth-child(3) {
+  border-right: none;
+}
+.cases__item:nth-child(9) {
+  border-right: none;
+  border-bottom: none;
+}
+.cases__item:nth-child(7) {
+  border-bottom: none;
+}
+.cases__item:nth-child(8) {
+  border-bottom: none;
+}
+.cases__item_width-one {
+  width: 433px;
+}
+.cases__item_width-two {
+  width: 454px;
+}
+.cases__item_width-three {
+  width: 433px;
+}
+.cases__item_width-four {
+  width: 320px;
+}
+.cases__item_width-five {
+  width: 453px;
+}
+.cases__item_width-six {
+  width: 547px;
+}
+.cases__text_margin-big {
+  margin: 85px 0 20px;
+}
+.cases__text_margin-medium {
+  margin: 56px 0 20px;
+}
+.cases__text_margin-none {
+  margin: 0 0 20px;
+}
+.cases__item_hover:hover {
+  background-color: #ededf7;
+}
+.cases__item_hidden {
+  padding: 40px 227px;
+  background-color: #ededf7;
+}
+
+.first-type:first-of-type {
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
