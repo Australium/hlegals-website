@@ -1,0 +1,62 @@
+.logos {
+    &__container {
+        width: 1440px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__heading {
+        @include font (14px, 17px, 700);
+        @include text;
+        color: $main-regular;
+        text-align: center;
+        margin: 0 0 30px;
+    }
+    &__image {
+        display: block;
+    }
+    &__link {
+        width: 360px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__link_blue {
+        background-color: rgba(28, 66, 128, 1);
+    }
+    &__link_dark-green {
+        background-color: rgba(20, 54, 70, 1);
+    }
+    &__link_orange {
+        background-color: rgba(244, 139, 48, 1);
+    }
+    &__link_purple {
+        background-color: rgba(158, 77, 195, 1);
+    }
+    &__link_orange-two {
+        background-color: rgba(253, 147, 57, 1);
+    }
+    &__link_grey {
+        background-color: rgba(226, 226, 228, 1);
+    }
+    &__link_crimson {
+        background-color:rgba(199, 28, 54, 1);
+    }
+    &__link_teal {
+        background-color: rgba(220, 243, 249, 1);
+    }
+    &__link_grey-two {
+        background-color: rgba(234, 234, 234, 1);
+    }
+    &__link_indigo {
+        background-color: rgba(40, 34, 64, 1);
+    }
+    &__link_teal-dark {
+        background-color: rgba(29, 69, 104, 1);
+    }
+    &__link_black {
+        background-color: $black;
+    }
+}

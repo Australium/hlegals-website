@@ -28,6 +28,11 @@
     font-weight: $font-weight;
 }
 
+@mixin text {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 @mixin text-gradient ($color, $gradient) {
     background-color: $color;
     background-image: $gradient;
