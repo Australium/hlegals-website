@@ -1,0 +1,76 @@
+.masonry {
+    background-color: $grey-bg;
+    padding: 40px 0 0;
+    height: 872px;
+    overflow: hidden;
+    position: relative;
+    &__heading {
+        @include font (42px, 50px, 700);
+        @include text-gradient ($accent, $gradient-red-text);
+    }
+    &__jump-link {
+        color: $active-regular;
+    }
+    &__jump-link_after:after {
+        content: url('../images/svg/greater-than-symbol-active-regular.svg');
+        left: 98px;
+    }
+    &__heading {
+        margin: 3px 0 40px;
+    }
+    &__list {
+        // columns: 413px;
+        column-count: 3;
+        gap: 40px;
+    }
+    &__image {
+        display: block;
+        max-width: 100%;
+    }
+    &__item {
+        margin: 0 0 40px;
+        break-inside: avoid;
+        background-color: $white;
+        border-radius: 8px;
+    }
+    &__inside-wrap {
+        padding: 20px 20px 21px;
+    }
+    &__item-heading {
+        @include font (18px, 21px, 500);
+        color: $active-regular;
+        margin: 0 0 10px;
+    }
+    &__date {
+        @include font (12px, 14px, 700);
+        @include text;
+        color: $grey-text;
+        margin: 0 0 20px;
+        border-bottom: 4px solid $grey-separator;
+        padding: 0 0 20px;
+    }
+    &__text {
+        @include font (16px, 22px);
+        color: $black;
+    }
+    &__fade {
+        position: absolute;
+        top: 670px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $linear-gradient;
+    }
+    // Here are 2 classes for JS manipulation for removing overflow and div
+    &__overflow {
+        overflow: unset;
+        height: unset;
+    }
+    &__fade_dissapear {
+        display: none;
+    }
+    // ------------------------------------------------------------------
+}
