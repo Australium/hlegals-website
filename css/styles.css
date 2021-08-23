@@ -1304,4 +1304,49 @@ body {
   background-color: black;
 }
 
+@media (max-width: 1439px) and (max-width: 1439px) {
+  .logos__container {
+    width: 100%;
+    padding: 0;
+  }
+  .logos__link {
+    width: auto;
+  }
+  .logos__item {
+    width: 33.33%;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .logos__item {
+    width: 50%;
+  }
+  .logos__link {
+    height: 90px;
+  }
+  .logos__item:nth-child(8) {
+    order: 1;
+  }
+  .logos__item:nth-child(7) {
+    order: 2;
+  }
+  .logos__item:nth-child(5) {
+    order: 3;
+  }
+  .logos__item:nth-child(6) {
+    order: 8;
+  }
+  .logos__item:nth-child(9) {
+    order: 4;
+  }
+  .logos__item:nth-child(12) {
+    order: 5;
+  }
+  .logos__item:nth-child(11) {
+    order: 6;
+  }
+  .logos__item:nth-child(10) {
+    order: 7;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,53 @@
+@include mq-tablet {
+    @media (max-width: $screen-tablet) {
+        .logos {
+            &__container {
+                width: 100%;
+                padding: 0;
+            }
+            &__link {
+                width: auto;
+            }
+            &__item {
+                width: 33.33%;
+            }
+        }
+    }
+}
+
+@include mq-phone {
+    @media (max-width: $screen-phone) {
+        .logos {
+            &__item {
+                width: 50%;
+            }
+            &__link {
+                height: 90px;
+            }
+            &__item:nth-child(8) {
+                order: 1;
+            }
+            &__item:nth-child(7) {
+                order: 2;
+            }
+            &__item:nth-child(5) {
+                order: 3;
+            }
+            &__item:nth-child(6) {
+                order: 8;
+            }
+            &__item:nth-child(9) {
+                order: 4;
+            }
+            &__item:nth-child(12) {
+                order: 5;
+            }
+            &__item:nth-child(11) {
+                order: 6;
+            }
+            &__item:nth-child(10) {
+                order: 7;
+            }
+        }
+    }
+}
