@@ -1,0 +1,44 @@
+@include mq-tablet {
+    @media (max-width: $screen-tablet) {
+        .masonry {
+            &__list {
+                column-count: 2;
+            }
+            &__image {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include mq-phone {
+    @media (max-width: $screen-phone) {
+        .masonry {
+            height: 921px;
+            padding: 20px 0 0;
+            &__list {
+                column-count: 1;
+            }
+            &__heading {
+                @include font (32px, 38px);
+                margin: 3px 0 20px;
+            }
+            &__text {
+                display: none;
+            }
+            &__date {
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+            &__item {
+                margin: 0 0 20px;
+            }
+            &__fade {
+                top: 791px;
+                height: 130px;
+                background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 21.5%);
+            }
+        }
+    }
+}
