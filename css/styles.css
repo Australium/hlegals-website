@@ -395,6 +395,15 @@ body {
     transform: translateY(100%);
   }
 }
+.header-services {
+  background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background-size: auto;
+  background-position: center;
+}
+.header-services__section {
+  padding: 50px 0 73px;
+}
+
 @media (max-width: 1439px) {
   .container {
     width: 100%;
@@ -403,6 +412,19 @@ body {
 
   .header__section-bottom-flex {
     padding: 242px 20px 0;
+  }
+
+  .header-services__wrap {
+    flex-direction: column;
+  }
+  .header-services__logo {
+    margin: 0 0 20px;
+  }
+  .header-services__nav-bar-inside-wrap {
+    margin: 0 0 10px;
+  }
+  .header-services__nav-bar {
+    align-items: flex-start;
   }
 }
 @media (max-width: 767px) {
@@ -480,6 +502,21 @@ body {
   .number {
     color: #b3b3ba;
     margin: 0;
+  }
+
+  .header-services {
+    background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-size: auto;
+    background-position: center;
+  }
+  .header-services__language-link {
+    color: white;
+  }
+  .header-services__number {
+    color: white;
+  }
+  .header-services__wrap {
+    align-items: flex-end;
   }
 }
 @media (max-width: 374px) {
@@ -900,6 +937,7 @@ body {
 
 .jump-link_team-after:after {
   content: url("../images/svg/greater-than-symbol-active-regular.svg");
+  left: 88px;
 }
 
 .team-slider-card {
@@ -1189,6 +1227,10 @@ body {
 
 .first-type:first-of-type {
   padding: 0 20px;
+}
+
+.services-cases {
+  padding: 60px 0 30px;
 }
 
 @media (max-width: 1439px) and (max-width: 1439px) {
@@ -1550,6 +1592,9 @@ body {
   position: relative;
   text-decoration: none;
 }
+.address-section__map-link_before:before {
+  bottom: 4px;
+}
 .address-section__map-link:hover {
   color: #f0145a;
   transition: 0.3s ease;
@@ -1600,6 +1645,10 @@ body {
 }
 .address-section__facebook-wrap {
   margin: 0 17px 0 0;
+}
+
+.services__footer-container {
+  border: none;
 }
 
 @media (max-width: 1439px) and (max-width: 1439px) {

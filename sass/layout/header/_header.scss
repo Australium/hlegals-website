@@ -243,3 +243,12 @@
     from {transform: translateY(0);}
     to {transform: translateY(100%);}
 }
+
+.header-services {
+    background-image: $gradient-super-soft;
+    background-size: auto;
+    background-position: center;
+    &__section {
+        padding: 50px 0 73px;
+    }
+}

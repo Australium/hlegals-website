@@ -28,6 +28,9 @@
         position: relative;
         text-decoration: none;
     }
+    &__map-link_before:before {
+        bottom: 4px;
+    }
     &__map-link:hover {
         color: $accent;
         transition: 0.3s ease;
@@ -70,4 +73,8 @@
     &__facebook-wrap {
         margin: 0 17px 0 0;
     }
+}
+
+.services__footer-container {
+    border: none;
 }

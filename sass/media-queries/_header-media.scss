@@ -8,6 +8,20 @@
             padding: 242px 20px 0;
         }
     }
+    .header-services {
+        &__wrap {
+        flex-direction: column;
+        }
+        &__logo {
+            margin: 0 0 20px;
+        }
+        &__nav-bar-inside-wrap {
+            margin: 0 0 10px;
+        }
+        &__nav-bar {
+            align-items: flex-start;
+        }
+    }
 }
 
 @include mq-phone {
@@ -83,6 +97,20 @@
     .number {
         color: $grey-text;
         margin: 0;
+    }
+    .header-services {
+        background-image: $gradient-super-soft;
+        background-size: auto;
+        background-position: center;
+        &__language-link {
+            color: $white;
+        }
+        &__number {
+            color: $white;
+        }
+        &__wrap {
+            align-items: flex-end;
+        }
     }
 }
 
