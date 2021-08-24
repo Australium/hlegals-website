@@ -516,7 +516,7 @@ body {
     color: white;
   }
   .header-services__wrap {
-    align-items: flex-end;
+    flex-direction: row;
   }
 }
 @media (max-width: 374px) {

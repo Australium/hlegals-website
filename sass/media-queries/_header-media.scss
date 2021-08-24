@@ -109,7 +109,7 @@
             color: $white;
         }
         &__wrap {
-            align-items: flex-end;
+            flex-direction: row;
         }
     }
 }
