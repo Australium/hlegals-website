@@ -1,0 +1,73 @@
+.footer {
+    background-color: $grey-bg;
+    padding: 0 0 40px;
+    &__container {
+        border-top: 4px solid $grey-separator;
+        padding: 28px 0 0;
+    }
+    &__copyright {
+        @include font (16px, 19px, 500);
+        color: $grey-text;
+    }
+}
+.address-dot:before {
+    @include dot (-15px, 6px);
+    background-color: $grey-text;
+}
+.address-section {
+    display: flex;
+    &__address {
+        color: $main-regular;
+        font-weight: 500;
+        margin: 0 47px 0 0;
+    }
+    &__map-link {
+        @include font (12px, 14px, 700);
+        @include text;
+        color: $active-regular;
+        position: relative;
+        text-decoration: none;
+    }
+    &__map-link:hover {
+        color: $accent;
+        transition: 0.3s ease;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 0 0;
+    }
+    &__contact {
+        @include font (16px, 19px, 700);
+        color: $active-regular;
+        position: relative;
+        text-decoration: none;
+    }
+    &__contact:hover {
+        color: $accent;
+        transition: 0.3s ease;
+    }
+    &__number {
+        color: $main-alt;
+        margin: 0 26px 0 0;
+        position: relative;
+    }
+    &__number:before {
+        @include dot (-11px, 6px);
+        background-color: $grey-text;
+    }
+    &__wrap-row-one, &__wrap-row-two {
+        display: flex;
+        align-items: center;
+    }
+    &__wrap-row-one {
+        margin: 0 0 22px;
+    }
+    &__facebook-logo_hover:hover {
+        fill: $accent;
+        transition: 0.3s ease;
+    }
+    &__facebook-wrap {
+        margin: 0 17px 0 0;
+    }
+}

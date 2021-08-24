@@ -1,0 +1,11 @@
+.facebook-logo {
+        &_hover:hover {
+                @include hover;
+                fill: $active-regular;
+        }
+        
+        &__wrap {
+                display: flex;
+        }
+}
+

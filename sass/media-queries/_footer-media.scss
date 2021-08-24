@@ -1,0 +1,56 @@
+@include mq-tablet {
+    @media (max-width: $screen-tablet) {
+        .footer {
+            &__container {
+                padding: 23px 20px 0;
+            }
+            &__copyright-wrap {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                width: 36%;
+            }
+        }
+    }
+}
+
+@include mq-phone {
+    @media (max-width: $screen-phone) {
+        .footer {
+            padding: 0 0 118px;
+            &__copyright-wrap {
+                width: auto;
+            }
+        }
+        .address-section {
+            flex-direction: column;
+            align-items: center;
+            &__wrap {
+                margin: 0;
+            }
+            &__address {
+                display: block;
+                margin: 0 0 10px;
+            }
+            &__facebook-wrap {
+                display: flex;
+                margin: 0 0 20px;
+            }
+            &__wrap-row-one, &__wrap-row-two {
+                flex-direction: column;
+            }
+            &__wrap-row-one {
+                margin: 0 0 20px;
+            }
+            &__number {
+                margin: 0 0 20px;
+            }
+            &__wrap-row-two {
+                margin: 0 0 20px;
+            }
+        }
+        .address-dot:before {
+            display: none;
+        }
+    }
+}

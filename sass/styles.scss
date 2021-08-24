@@ -3,6 +3,10 @@
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/body';
+@import 'components/dot';
+@import 'components/address';
+@import 'components/number';
+@import 'components/_facebook-logo';
 @import 'components/button';
 @import 'layout/header/header';
 @import 'media-queries/header-media';
@@ -18,3 +22,5 @@
 @import 'media-queries/logos-media';
 @import 'layout/main/masonry';
 @import 'media-queries/masonry-media';
+@import 'layout/footer/footer';
+@import 'media-queries/footer-media';

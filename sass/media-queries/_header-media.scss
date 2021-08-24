@@ -20,12 +20,6 @@
         &__contact-list {
             display: none;
         }
-        &__address {
-            display: none;
-        }
-        &__facebook-wrap {
-            display: none;
-        }
         &__hamburger-menu {
             display: block;
         }
@@ -50,10 +44,6 @@
         &__wrap {
             flex-wrap: wrap;
             align-items: center;
-        }
-        &__number {
-            color: $grey-text;
-            margin: 0;
         }
         &__language-links {
             color: $grey-text;
@@ -83,6 +73,16 @@
             padding: 147px 20px 0;
             min-height: calc(100vh - 95px);
         }
+    }
+    .facebook-logo__wrap {
+        display: none;
+    }
+    .address {
+        display: none;
+    }
+    .number {
+        color: $grey-text;
+        margin: 0;
     }
 }
 

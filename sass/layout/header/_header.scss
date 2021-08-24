@@ -39,7 +39,7 @@
     }
     &__language-links_hover:hover {
         @include status-link ($color: $grey-alt);
-        transition: 0.3s ease;
+        @include hover;
     }
     &__language-links_margin {
         margin: 0 22px 0 0;
@@ -53,7 +53,7 @@
     }
     &__contact-links_hover:hover {
         color: $accent;
-        transition: 0.3s ease;
+        @include hover;
     }
     // Here is a premade class for JS manupulation on contact links
     &__contact-links_active {
@@ -71,32 +71,14 @@
     &__contact-item_no-margin {
         margin: 0
     }
-    &__number {
-        @include decor;
-        @include font (16px, 19px , 700);
-        position: relative;
-        margin: 0 29px 0 0;
-    }
-    &__address {
-        @include font (16px, 19px);
-        color: $white;
-        margin: 0 25px 0 0;
-        position: relative;
-    }
     &__logo-image {
         display: block;
     }
     &__facebook-wrap {
         position: relative;
-        display: flex;
-        padding: 1px 0 0 0;
     }
-    &__facebook-wrap.dot:before {
-        @include dot (-17px, 8px);
-    }
-    &__facebook-logo_hover:hover {
-        fill: $active-regular;
-        transition: 0.3s ease;
+    &__facebook-wrap_before:before {
+        @include dot (-17px, 9px);
     }
     &__hamburger-menu {
         display: none;
@@ -238,10 +220,6 @@
         top: 26px;
         position: absolute;
     }
-}
-
-.dot:before {
-    @include dot (-14px, 4px)
 }
 
 .container {
