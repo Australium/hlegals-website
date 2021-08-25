@@ -16,7 +16,7 @@
             &:nth-child(14) {
                 border-right: none;
             }
-            &:nth-last-child(-n+4) {
+            &:nth-child(2n+12) {
                 border-bottom: none;
             }
             &_visible-one {
@@ -60,6 +60,12 @@
             }
             &__item_hidden_last {
                 padding: 20px 20px 72px;
+            }
+            &__item:nth-child(12) {
+                border-bottom: 1px solid $white;
+            }
+            &__list {
+                border-radius: 12px 0 12px 12px;
             }
         }
         .cases__item_visible-small + .cases__item_hidden_small {
