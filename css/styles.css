@@ -109,11 +109,14 @@ body {
   margin: 0 29px 0 0;
 }
 
-.facebook-logo_hover:hover {
+.facebook-logo {
+  display: flex;
+}
+.facebook-logo__icon_hover:hover {
   transition: 0.3s ease;
   fill: #24a3ff;
 }
-.facebook-logo__wrap {
+.facebook-logo__link {
   display: flex;
 }
 
@@ -402,6 +405,7 @@ body {
   background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   background-size: auto;
   background-position: center;
+  border-radius: 0 0 12px 12px;
 }
 .header-services__section {
   padding: 50px 0 73px;
@@ -494,7 +498,7 @@ body {
     min-height: calc(100vh - 95px);
   }
 
-  .facebook-logo__wrap {
+  .facebook-logo {
     display: none;
   }
 
@@ -520,6 +524,9 @@ body {
   }
   .header-services__wrap {
     flex-direction: row;
+  }
+  .header-services__nav-bar {
+    margin: 0 0 13px;
   }
 }
 @media (max-width: 374px) {
@@ -916,6 +923,9 @@ body {
     font-size: 16px;
     line-height: 22px;
     margin: 10px 0 0 0;
+  }
+  .service-cards__list-link {
+    margin: 0;
   }
 }
 .jump-link {

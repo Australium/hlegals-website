@@ -223,15 +223,6 @@
         align-items: center;
         padding: 242px 0 0;
     }
-    // &__hamburger-item_logo_before:before {
-    //     background-image: url('../images/svg/p-mobile.svg');
-    //     background-repeat: no-repeat;
-    //     width: 32px;
-    //     height: 32px;
-    //     content: '';
-    //     top: 26px;
-    //     position: absolute;
-    // }
 }
 
 .container {
@@ -260,6 +251,7 @@
     background-image: $gradient-super-soft;
     background-size: auto;
     background-position: center;
+    border-radius: 0 0 12px 12px;
     &__section {
         padding: 50px 0 73px;
     }

@@ -88,7 +88,7 @@
             min-height: calc(100vh - 95px);
         }
     }
-    .facebook-logo__wrap {
+    .facebook-logo {
         display: none;
     }
     .address {
@@ -110,6 +110,9 @@
         }
         &__wrap {
             flex-direction: row;
+        }
+        &__nav-bar {
+            margin: 0 0 13px;
         }
     }
 }
