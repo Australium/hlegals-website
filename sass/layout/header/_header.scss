@@ -157,8 +157,15 @@
         background: $white;
         top: -10px;
         right: 0px;
-        padding: 74px 20px 0;
+        padding: 26px 20px 0;
         border-radius: 12px 12px 0 0;
+    }
+    &__hamburger-list-logo-item {
+        align-self: center;
+        margin: 0 0 16px;
+    }
+    &__hamburger-list-logo {
+        display: block;
     }
     &__checkbox:checked ~ .header__hamburger-list {
         display: flex;
@@ -211,15 +218,15 @@
         align-items: center;
         padding: 242px 0 0;
     }
-    &__hamburger-item_logo_before:before {
-        background-image: url('../images/svg/p-mobile.svg');
-        background-repeat: no-repeat;
-        width: 32px;
-        height: 32px;
-        content: '';
-        top: 26px;
-        position: absolute;
-    }
+    // &__hamburger-item_logo_before:before {
+    //     background-image: url('../images/svg/p-mobile.svg');
+    //     background-repeat: no-repeat;
+    //     width: 32px;
+    //     height: 32px;
+    //     content: '';
+    //     top: 26px;
+    //     position: absolute;
+    // }
 }
 
 .container {

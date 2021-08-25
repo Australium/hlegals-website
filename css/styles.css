@@ -301,8 +301,15 @@ body {
   background: white;
   top: -10px;
   right: 0px;
-  padding: 74px 20px 0;
+  padding: 26px 20px 0;
   border-radius: 12px 12px 0 0;
+}
+.header__hamburger-list-logo-item {
+  align-self: center;
+  margin: 0 0 16px;
+}
+.header__hamburger-list-logo {
+  display: block;
 }
 .header__checkbox:checked ~ .header__hamburger-list {
   display: flex;
@@ -356,15 +363,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 242px 0 0;
-}
-.header__hamburger-item_logo_before:before {
-  background-image: url("../images/svg/p-mobile.svg");
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
-  content: "";
-  top: 26px;
-  position: absolute;
 }
 
 .container {
@@ -522,7 +520,7 @@ body {
 @media (max-width: 374px) {
   .header__hamburger-list {
     width: calc(100vw + (375px - 100vw));
-    height: 100%;
+    height: calc(100% + 10px);
   }
 }
 .services {
