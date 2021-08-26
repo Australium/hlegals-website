@@ -54,4 +54,13 @@
             margin: 0;
         }
     }
+    .services-page {
+        padding: 29px 0 0;
+        &__service-cards {
+            padding: 0 0 20px;
+        }
+        &__h-2 {
+            margin: 0 0 20px;
+        }
+    }
 }

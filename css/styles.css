@@ -941,6 +941,16 @@ body {
   .service-cards__list-link {
     margin: 0;
   }
+
+  .services-page {
+    padding: 29px 0 0;
+  }
+  .services-page__service-cards {
+    padding: 0 0 20px;
+  }
+  .services-page__h-2 {
+    margin: 0 0 20px;
+  }
 }
 .jump-link {
   font-size: 14px;
