@@ -114,6 +114,15 @@
         &__nav-bar {
             margin: 0 0 13px;
         }
+        &__logo-text {
+            @include font (19px, 22px)
+        }
+        &__logo-wrap {
+            padding: 0;
+        }
+        &__logo-picture-slash, &__logo-picture-p {
+            margin: 0;
+        }
     }
 }
 

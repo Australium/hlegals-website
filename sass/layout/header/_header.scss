@@ -255,7 +255,26 @@
     &__section {
         padding: 50px 0 73px;
     }
-    &__logo {
-        margin: 0 auto 4px 0;
+    &__logo-link {
+        margin: 0 5px 0 0;
+    }
+    &__logo-wrap {
+        display: flex;
+        margin: 0 auto 0 0;
+        padding: 0 0 4px;
+    }
+    &__logo-text {
+        @include font (38px, 45px);
+        color: $white;
+        margin: 0 1px 0 0;
+    }
+    &__logo-picture-slash {
+        margin: 1px 0 0;
+    }
+    &__logo-picture-p {
+        margin: 1px 0 0;
+    }
+    &__nav-bar {
+        padding: 3px 0 2px;
     }
 }
