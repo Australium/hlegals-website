@@ -9,7 +9,7 @@
     &__h-2 {
         @include font (42px, 50px, 700);
         @include text-gradient ($accent, $gradient-red-text);
-        margin: 0 0 68px;
+        margin: 3px 0 68px;
     }
     &__icon {
         background-color: $white;
