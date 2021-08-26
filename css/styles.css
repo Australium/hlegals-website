@@ -410,6 +410,9 @@ body {
 .header-services__section {
   padding: 50px 0 73px;
 }
+.header-services__logo {
+  margin: 0 auto 4px 0;
+}
 
 @media (max-width: 1439px) {
   .container {
@@ -870,6 +873,16 @@ body {
 }
 .service-cards__list-item:nth-last-child(-n+3) {
   margin-bottom: 0;
+}
+
+.services-page {
+  background-image: none;
+}
+.services-page__h-2 {
+  margin: 0 0 68px;
+}
+.services-page__service-cards {
+  padding: 0 0 48px;
 }
 
 @media (max-width: 1439px) {

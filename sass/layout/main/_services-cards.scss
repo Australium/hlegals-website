@@ -49,3 +49,13 @@
         margin-bottom: 0;
     }
 }
+
+.services-page {
+    background-image: none;
+    &__h-2 {
+        margin: 0 0 68px;
+    }
+    &__service-cards {
+        padding: 0 0 48px;
+    }
+}
